@@ -16,16 +16,45 @@ public class Mouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        ///////////////////
+        ///Sur Téléphone///
+        ///////////////////
+        if (Input.touchCount > 0)
         {
-            transform.position += new Vector3(-1, 0, 0);
+            var touch = Input.touches[0];
+            if (touch.position.x < Screen.width / 2)
+            {
+                if (Input.GetTouch(0).phase == TouchPhase.Began)
+                {
+                    transform.position += new Vector3(-1, 0, 0);
+                }
+            }
+            else if (touch.position.x > Screen.width / 2)
+            {
+                if (Input.GetTouch(0).phase == TouchPhase.Began)
+                {
+                    transform.position += new Vector3(1, 0, 0);
+                }
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else
+        ////////////////////
+        ///Sur Ordinateur///
+        ////////////////////
         {
-            transform.position += new Vector3(1, 0, 0);
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                    transform.position += new Vector3(-1, 0, 0);               
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                    transform.position += new Vector3(1, 0, 0);
+            }
         }
-
-        if(Time.time - previousTime > fallTime)
+        //////////////////////
+        ///Chute de la forme//
+        //////////////////////
+        if (Time.time - previousTime > fallTime)
         {
             transform.position += new Vector3(0, -1, 0);
             previousTime = Time.time;
