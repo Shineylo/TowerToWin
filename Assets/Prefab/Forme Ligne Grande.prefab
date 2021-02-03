@@ -169,8 +169,9 @@ GameObject:
   - component: {fileID: 6481709552132825224}
   - component: {fileID: 6481709552132825222}
   - component: {fileID: -7528111724201416914}
+  - component: {fileID: -2516906306870988125}
   m_Layer: 0
-  m_Name: Ligne 3
+  m_Name: Forme Ligne Grande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,6 +220,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallTime: 0.8
+  playable: 1
+--- !u!54 &-2516906306870988125
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6481709552132825227}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 48
+  m_CollisionDetection: 0
 --- !u!1 &6481709552511159584
 GameObject:
   m_ObjectHideFlags: 0

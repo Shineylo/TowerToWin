@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Main
     - Mouvement
     - SpawningForme
     Unity.Rider.Editor.dll:
@@ -38,6 +39,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -54,6 +57,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12796}
     - Class: 114
       Script: {instanceID: 13052}
+    - Class: 114
+      Script: {instanceID: 13594}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -363,7 +368,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: c0babe0a56904b592aadc415f93e3a96
+      Hash: 7b93d4198b2bdcab8c68fbe6b0141f1b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mouvement
@@ -387,7 +392,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 2fd6058bf227dbc88e90dcddf8f5836c
+      Hash: 95ad9e334ea62edd269d2461435b20ad
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawningForme
@@ -499,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c9c4842fb7c12b76604d2276e576ab74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Main
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Main.cs" />
     <Compile Include="Assets\Script\Mouvement.cs" />
     <Compile Include="Assets\Script\SpawningForme.cs" />
     <Reference Include="UnityEngine">
